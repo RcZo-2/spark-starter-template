@@ -1,5 +1,3 @@
-# README
-
 # 在本機開發 Apache Spark 以及試跑 server submit job
 
 2025/2/5 更新初版
@@ -49,16 +47,19 @@
 
 ## 3. IDE 相關配置
 
-直接使用本 repo 的範本 java 程式跟 pom 檔
+直接使用本 repo 的範本
 
 | **Step** | **項目** | **Memo** |
 | --- | --- | --- |
-| 1 ||
-| 2 ||
-| 3 ||
+| 1 |放好程式跟 pom 檔||
+| 2 |調整 Run Config||
+| 3 |IDE 試 Run ||
+| 4 |打包 jar ||
+| 5 |Spark submit Local Mode 試 Run ||
 
+## 4. 其他知識加值
 
-## 4. Common Issues and Troubleshooting
+## 5. 常見問題與排障
 
 ### Issue 1: “Error: Port already in use”
 
@@ -72,21 +73,12 @@
 - **Solution**: Run the following command to install all required dependencies:
 `shell npm install`
 
-## 5. Project Diagram
+## 6. 小結
 
 ![https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/bobo.png](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/bobo.png)
 
-Development Environment Diagram
-
-This diagram shows how the different components of the development environment communicate with each other.
-
-## 6. Conclusion
-
-Now you should be all set up with a fully functioning local development environment!
-
-If you run into any issues, please refer to the troubleshooting section or open an issue in the repository.
 
 ---
 
-> Note: This tutorial is based on a Node.js environment. Adjust steps for different technology stacks as necessary.
+> Note: 僅適用大樹中台數據科
 >
