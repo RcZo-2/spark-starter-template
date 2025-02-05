@@ -21,7 +21,7 @@
 | 3        | 下載 file system 模擬器 [winutils](https://github.com/cdarlint/winutils/tree/master) ，對應的 hadoop 版本看上面資料夾內 `RELEASE` 檔裡面有寫  | windows 才需要做這步，Mac、Linux 的童鞋可以跳 step 5    |
 | 4        | 下載的東西放到你電腦上一個簡潔的位置 (路徑不要太長)               | e.g. `D:\winutils\hadoop-3.3.4`             |
 | 5        | 設定執行檔參數，在 `spark-3.X.X-bin-hadoop3/bin/spark-submit.cmd` 第二行 @echo off 下面插入:                  |這些參數設在電腦的環境變數也可以，但我常 Spark+Java 多版本組合切換，習慣這樣子去設定好獨立環境|
-|          | <br>`set JAVA_HOME=C:\...\你java的安裝路徑` 指到你的 java 安裝路徑                                            ||
+           | <br>`set JAVA_HOME=C:\...\你java的安裝路徑` 指到你的 java 安裝路徑                                            ||
 |          | <br>`set HADOOP_HOME=D:\winutils\hadoop-3.3.4` 指到你step 4 放置的路徑                                       ||
 |          | <br>Mac、Linux的話 `spark-3.X.X-bin-hadoop3/bin/spark-submit` 在Licence註解區塊下面插入:                      ||
 |          | <br>`export JAVA_HOME=/usr/lib/.../你java的安裝路徑`                                                         ||
