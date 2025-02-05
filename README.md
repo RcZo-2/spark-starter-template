@@ -57,9 +57,7 @@
 | 4 |打包 jar ||
 | 5 |Spark submit Local Mode 試 Run ||
 
-## 4. 其他知識加值
-
-## 5. 常見問題與排障
+## 4. 常見問題與排障
 
 ### Issue 1: “Error: Port already in use”
 
@@ -72,6 +70,9 @@
 
 - **Solution**: Run the following command to install all required dependencies:
 `shell npm install`
+
+## 5. 其他知識加值區
+一些小細節跟架構面的知識分享
 
 ## 6. 小結
 
