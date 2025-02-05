@@ -12,7 +12,7 @@
 
 ## 2. 準備 Spark submit Local Mode 環境
 
-這邊是介紹如何跑 Spark submit Local Mode 的環境配置，cluster mode 要安裝步驟較多以後再補充，如要看開發環境相關可跳過
+這邊是介紹如何跑 Spark submit Local Mode 的環境配置，cluster mode 要安裝步驟較多以後再補充，如要看開發環境相關可直接跳 3.
 
 ### 2-1. 配置步驟
 
@@ -47,15 +47,16 @@
     ├── /sbin                                   # cluster server tool 相關啟動檔放這
     └── ...
 
-## 3. Configuration (Optional)
+## 3. IDE 相關配置
 
-You may need to configure additional settings depending on the project.
+直接使用本 repo 的範本 java 程式跟 pom 檔
 
-| Configuration | Description | Example Value |
+| **Step** | **項目** | **Memo** |
 | --- | --- | --- |
-| **Database URL** | URL for connecting to your local database | `localhost:5432` |
-| **API Key** | Key for accessing third-party APIs | `1234ABCD5678` |
-| **Environment** | Specify development or production environment | `development` |
+| 1 ||
+| 2 ||
+| 3 ||
+
 
 ## 4. Common Issues and Troubleshooting
 
