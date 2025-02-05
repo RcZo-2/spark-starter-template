@@ -15,11 +15,11 @@ Follow these steps to get your local development environment up and running.
 
 | Step No. | Description                                          | Command/Action                         |
 |----------|------------------------------------------------------|----------------------------------------|
-| 1        | Clone the repository                                | `git clone https://github.com/your/repo.git` |
-| 2        | Navigate to the project folder                      | `cd repo-folder`                       |
-| 3        | Install project dependencies (for Node.js example)  | `npm install`                          |
-| 4        | Start the development server                        | `npm start`                            |
-| 5        | Access the app in the browser                       | `http://localhost:3000`                |
+| 1        | Clone the repository                                | ```bash<br>git clone https://github.com/your/repo.git<br>``` |
+| 2        | Navigate to the project folder                      | ```bash<br>cd repo-folder<br>```        |
+| 3        | Install project dependencies (for Node.js example)  | ```bash<br>npm install<br>```           |
+| 4        | Start the development server                        | ```bash<br>npm start<br>```             |
+| 5        | Access the app in the browser                       | Open `http://localhost:3000` in your browser |
 
 ## 3. Configuration (Optional)
 
@@ -35,11 +35,18 @@ You may need to configure additional settings depending on the project.
 
 ### Issue 1: "Error: Port already in use"
 - **Solution**: Kill the process using the port.
-    - On macOS/Linux: `lsof -i :3000` then `kill -9 <PID>`
+    - On macOS/Linux: 
+      ```bash
+      lsof -i :3000
+      kill -9 <PID>
+      ```
     - On Windows: Use Task Manager to find and kill the process.
 
 ### Issue 2: "Missing dependencies"
-- **Solution**: Run `npm install` to install all required dependencies.
+- **Solution**: Run the following command to install all required dependencies:
+    ```bash
+    npm install
+    ```
 
 ## 5. Project Diagram
 
