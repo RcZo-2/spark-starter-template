@@ -18,9 +18,9 @@
 |----------|------------------------------------------------------------------|----------------------------------------|
 | 1        | 到[官網](https://archive.apache.org/dist/spark/)下載對應的版本     | 一般都是下載 `spark-x.x.x-bin-hadoop3.tgz` |
 | 2        | 解壓整個資料夾放到你電腦上一個簡潔的位置 (路徑不要太長)               | e.g. `D:\spark-3.5.1-bin-hadoop3`         |
-| 3        | 下載 file system 模擬器 [winutils](https://github.com/cdarlint/winutils/tree/master) 對應的 hadoop 版本看上面資料夾內 `RELEASE` 檔裡面有寫  | windows 才需要做這步，Mac、Linux 的童鞋可以跳 step 5    |
+| 3        | 下載 file system 模擬器 [winutils](https://github.com/cdarlint/winutils/tree/master) ，對應的 hadoop 版本看上面資料夾內 `RELEASE` 檔裡面有寫  | windows 才需要做這步，Mac、Linux 的童鞋可以跳 step 5    |
 | 4        | 下載的東西放到你電腦上一個簡潔的位置 (路徑不要太長)               | e.g. `D:\winutils\hadoop-3.3.4`             |
-| 5        | Access the app in the browser                       | Open `http://localhost:3000` in your browser |
+| 5        | 設定執行檔                       | Open `http://localhost:3000` in your browser |
 
 ### 2-2. 資料夾概述
 test
