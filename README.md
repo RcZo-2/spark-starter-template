@@ -1,13 +1,13 @@
-# Local Development Environment Setup Tutorial
+# 在本機開發 Apache Spark 並試跑 spark submit job
 
-This guide will walk you through setting up a local development environment for your project.
+2025/2/5 更新初版
 
-## 1. Prerequisites
+## 1. 事先準備
 
-Before starting, make sure you have the following installed:
-- **[Git](https://git-scm.com/)**: Version control system.
-- **[Node.js](https://nodejs.org/)**: For JavaScript-based environments (adjust based on your stack).
-- **[Docker](https://www.docker.com/)**: For containerized development (optional).
+在開始之前，請確定已安裝下列項目:
+- **[Java](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)**: 後續將會使用 AWS 一些 l
+- **[IntelliJ](https://www.jetbrains.com/idea/download/)**: 或 eclipse 方便你寫 java 都好
+
 
 ## 2. Steps to Set Up Local Environment
 
