@@ -15,10 +15,10 @@ Follow these steps to get your local development environment up and running.
 
 | Step No. | Description                                          | Command/Action                         |
 |----------|------------------------------------------------------|----------------------------------------|
-| 1        | Clone the repository                                | ```bash<br>git clone https://github.com/your/repo.git<br>``` |
-| 2        | Navigate to the project folder                      | ```bash<br>cd repo-folder<br>```        |
-| 3        | Install project dependencies (for Node.js example)  | ```bash<br>npm install<br>```           |
-| 4        | Start the development server                        | ```bash<br>npm start<br>```             |
+| 1        | Clone the repository                                | ```shell<br>git clone https://github.com/your/repo.git<br>``` |
+| 2        | Navigate to the project folder                      | ```shell<br>cd repo-folder<br>```        |
+| 3        | Install project dependencies (for Node.js example)  | ```shell<br>npm install<br>```           |
+| 4        | Start the development server                        | ```shell<br>npm start<br>```             |
 | 5        | Access the app in the browser                       | Open `http://localhost:3000` in your browser |
 
 ## 3. Configuration (Optional)
@@ -36,7 +36,7 @@ You may need to configure additional settings depending on the project.
 ### Issue 1: "Error: Port already in use"
 - **Solution**: Kill the process using the port.
     - On macOS/Linux: 
-      ```bash
+      ```shell
       lsof -i :3000
       kill -9 <PID>
       ```
@@ -44,7 +44,7 @@ You may need to configure additional settings depending on the project.
 
 ### Issue 2: "Missing dependencies"
 - **Solution**: Run the following command to install all required dependencies:
-    ```bash
+    ```shell
     npm install
     ```
 
