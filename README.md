@@ -9,17 +9,21 @@
 - **[IntelliJ](https://www.jetbrains.com/idea/download/)**: 或用 eclipse 方便你寫 java 都好
 
 
-## 2. 配置 Spark submit Local Mode 環境
+## 2. 準備 Spark submit Local Mode 環境
 
-這邊是配製如何跑 Spark submit Local Mode 的環境準備，cluster mode 要安裝步驟較多以後再補充，如要看開發環境相關可跳過
+這邊是介紹如何跑 Spark submit Local Mode 的環境配置，cluster mode 要安裝步驟較多以後再補充，如要看開發環境相關可跳過
 
-| Step | 項目                                          | Memo                         |
-|----------|------------------------------------------------------|----------------------------------------|
-| 1        | 到[官網](https://archive.apache.org/dist/spark/)下載對應的版本                                | ```shell git clone https://github.com/your/repo.git ``` |
-| 2        | Navigate to the project folder                      | ```shell cd repo-folder ```        |
-| 3        | Install project dependencies (for Node.js example)  | ```shell npm install ```           |
-| 4        | Start the development server                        | ```shell npm start ```             |
+### 2-1. 配置步驟
+| Step     | 項目                                                             | Memo                                   |
+|----------|------------------------------------------------------------------|----------------------------------------|
+| 1        | 到[官網](https://archive.apache.org/dist/spark/)下載對應的版本     | 一般都是下載 spark-x.x.x-bin-hadoop3.tgz |
+| 2        | 解壓整個資料夾放到你電腦上一個簡潔的位置 (路徑不要太長)           | e.g. D:\spark-3.5.1-bin-hadoop3         |
+| 3        | 執行檔設定環境變數  | ```shell npm install ```           |
+| 4        | 執行檔設定環境變數                       | ```shell npm start ```             |
 | 5        | Access the app in the browser                       | Open `http://localhost:3000` in your browser |
+
+### 2-2. 資料夾概述
+test
 
 ## 3. Configuration (Optional)
 
