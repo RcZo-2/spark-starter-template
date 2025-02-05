@@ -15,10 +15,10 @@ Follow these steps to get your local development environment up and running.
 
 | Step No. | Description                                          | Command/Action                         |
 |----------|------------------------------------------------------|----------------------------------------|
-| 1        | Clone the repository                                | ```shell<br>git clone https://github.com/your/repo.git<br>``` |
-| 2        | Navigate to the project folder                      | ```shell<br>cd repo-folder<br>```        |
-| 3        | Install project dependencies (for Node.js example)  | ```shell<br>npm install<br>```           |
-| 4        | Start the development server                        | ```shell<br>npm start<br>```             |
+| 1        | Clone the repository                                | ```shell git clone https://github.com/your/repo.git ``` |
+| 2        | Navigate to the project folder                      | ```shell cd repo-folder ```        |
+| 3        | Install project dependencies (for Node.js example)  | ```shell npm install ```           |
+| 4        | Start the development server                        | ```shell npm start ```             |
 | 5        | Access the app in the browser                       | Open `http://localhost:3000` in your browser |
 
 ## 3. Configuration (Optional)
