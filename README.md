@@ -18,8 +18,8 @@
 | --- | --- | --- |
 | 1 | 到[官網](https://archive.apache.org/dist/spark/)下載對應的版本 | 一般都是下載 `spark-3.X.X-bin-hadoop3.tgz` |
 | 2 | 解壓整個資料夾放到你電腦上一個簡潔的位置 (路徑不要太長) | e.g. `D:\spark-3.5.1-bin-hadoop3` |
-| 3 | 下載 file system 模擬器 [winutils](https://github.com/cdarlint/winutils/tree/master) ，對應的 hadoop 版本看上面資料夾內的 RELEASE 檔裡面有寫 | windows 才需要做這步，Mac、Linux 的童鞋可以跳 step 5 |
-| 4 | 下載的東西放到你電腦上一個簡潔的位置 (路徑不要太長) | e.g. `D:\winutils\hadoop-3.3.4` |
+| 3 | 下載 file system 模擬器 [winutils](https://github.com/cdarlint/winutils/tree/master) ，對應的 hadoop 版本看上面資料夾內的 RELEASE 檔裡面有寫 | windows 才需要做這步，沒有 hadoop 3.3.4 可以先用 3.3.5，Mac、Linux 的童鞋可以跳 step 5 |
+| 4 | 下載的東西放到你電腦上一個簡潔的位置 (路徑不要太長) | e.g. `D:\winutils\hadoop-3.3.5` |
 | 5 | 設定執行檔參數:<br>**windows** 在 spark-3.X.X-bin-hadoop3/bin/spark-submit.cmd 的第二行 @echo off 下面插入:<br>`set JAVA_HOME=C:\...\你java的安裝路徑`<br>`set HADOOP_HOME=D:\...\你step 4 放置的路徑`<br><br>**Mac、Linux** 在 spark-3.X.X-bin-hadoop3/bin/spark-submit 的Licence 註解區塊下面插入:<br>`export JAVA_HOME=/usr/lib/.../你java的安裝路徑` | 這些參數設在電腦的環境變數也可以，但我常 Spark+Java 多版本組合切換，習慣這樣子去設定可以獨立環境作業<br> <br> 插入參數示意: ![addenv](https://github.com/RcZo-2/spark-starter-template/blob/main/assets/images/addenv.png) |
 | 6 | 測試配置結果:<br>**windows** 執行 `./spark-submit.cmd --master local[*] --class org.apache.spark.examples.JavaSparkPi ../examples/jars/spark-examples_2.12-3.5.1.jar`<br><br>**Mac、Linux** 執行 `./spark-submit --master local[*] --class org.apache.spark.examples.JavaSparkPi ../examples/jars/spark-examples_2.12-3.5.1.jar` | 配置正確的話，理論上會跑一堆 INFO log 之後看到一行算出來 *Pi is roughly 3……* ![runPi](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/runPi.png)
 
