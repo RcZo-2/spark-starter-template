@@ -22,7 +22,7 @@
 | 4        | 下載的東西放到你電腦上一個簡潔的位置 (路徑不要太長)               | e.g. `D:\winutils\hadoop-3.3.4`             |
 | 5        | 設定執行檔參數，在 `spark-3.X.X-bin-hadoop3/bin/spark-submit.cmd` 第二行 @echo off 下面插入:
              <br>`set JAVA_HOME=C:\...\你java的安裝路徑` 指到你的 java 安裝路徑                                            
-             <br>`set JAVA_HOME=C:\...\你java的安裝路徑` 指到你的 java 安裝路徑                                            
+             <br>`set JAVA_HOME=C:\...\你java的安裝路徑` 指到你的 java 安裝路徑                                            ||
 |          | <br>`set HADOOP_HOME=D:\winutils\hadoop-3.3.4` 指到你step 4 放置的路徑                                       ||
 |          | <br>Mac、Linux的話 `spark-3.X.X-bin-hadoop3/bin/spark-submit` 在Licence註解區塊下面插入:                      ||
 |          | <br>`export JAVA_HOME=/usr/lib/.../你java的安裝路徑`                                                         ||
