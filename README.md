@@ -29,40 +29,23 @@
 
 介紹幾個常用檔案跟放置路徑
 
-/spark-3.X.X-bin-hadoop3
-
-├── /bin                                                        # 存放用戶端工具的啟動檔
-
-│     ├── spark-shell                                      # Scala 的互動式命令列
-
-│     ├── spark-sql                                         # SQL 的互動式命令列
-
-│     └── spark-submit                                   # 本次使用的任務提交工具
-
-├── /conf                                                       # 存放設定檔
-
-│     ├── spark-defaults.conf                          # Spark 執行相關設定
-
-│     └── log4j2.properties                              # 日誌相關設定
-
-├── /data                                                        # 範例程式用的模擬資料
-
-├── /examples                                                # 範例程式
-
-│     ├── /jars                                                  # 範例程式的 jar 檔
-
-│     │     └── spark-examples_2.12-3.X.X.jar  # 上面測試用的 jar 檔
-
-│     └── /src                                                   # 範例程式原始碼
-
-├── /jars                                                         # Spark 相依的 jar 檔
-
-├── /kubernetes                                             # k8s 容器映像檔相關素材
-
-├── /sbin                                                        # 叢集伺服器工具的啟動檔
-
-...
-
+    ./spark-3.X.X-bin-hadoop3
+    ├── /bin                                    # client tool 相關啟動檔放這
+    │   ├── spark-shell                         # scala 的 REPL
+    │   ├── spark-sql                           # sql 的 REPL
+    │   └── spark-submit                        # 也就是本次使用的 submit 工具
+    ├── /conf                                   # 設定檔相關放這
+    │   ├── spark-defaults.conf                 # 跑 Spark 相關設定可以登錄在這
+    │   └── log4j2.properties                   # log 相關設定登錄在這
+    ├── /data                                   # 配合範例程式的mock data
+    ├── /examples                               # 範例程式
+    │   ├── /jars                               # 範例程式jar
+    │   │   └── spark-examples_2.12-3.X.X.jar   # 就是上面我們跑測試的jar
+    │   └── /src                                # 範例程式原始碼
+    ├── /jars                                   # 裡面就一堆 Spark 的依賴 jar 檔
+    ├── /kubernetes                             # k8s 相關打包 image 的素材
+    ├── /sbin                                   # cluster server tool 相關啟動檔放這
+    └── ...
 
 ## 3. Configuration (Optional)
 
