@@ -77,7 +77,7 @@
 
 ## 6. 小結
 
-![https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/bobo.png](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/bobo.png)
+![cat](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/buffering-loading.gif)
 
 
 ---
