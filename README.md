@@ -5,7 +5,7 @@
 ## 1. 事先準備
 
 在開始之前，請確定你有下列項目:
-- [**Java**](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html): 這裡用 AWS corretto 17，Openjdk、Zulu、Temurin 都可以
+- [**Java**](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html): 這裡示範用 AWS corretto 17，[Openjdk、Zulu、Temurin] [8、11] 都可以
 - [**IntelliJ**](https://www.jetbrains.com/idea/download/): 或用 eclipse 方便你寫 java 的 IDE 都好
 
 ## 2. 準備 Spark submit Local Mode 環境
@@ -52,19 +52,21 @@
 
 | **Step** | **項目** | **Memo** |
 | --- | --- | --- |
-| 1 |放好程式跟 pom 檔||
-| 2 |調整 Run Config||
-| 3 |IDE 試 Run ||
-| 4 |打包 jar ||
-| 5 |Spark submit Local Mode 試 Run ||
+| 1 |準備好開發工具，放好程式跟 pom 檔|務必確認 Java 版本和 Spark 版本要和上面一樣|
+| 2 |設定 Run Config 第一組:<br>• VM option 設定 `-Dspark.master=local[*] -Dspark.driver.memory=1g -Dspark.executor.memory=1g -Dspark.log.level=WARN --add-exportsjava.base/sun.nio.ch=ALL-UNNAMED`<br>• Environment variables 加入 `HADOOP_HOME=..\上面 2-1 winutilS 路徑`<br>• Modify options 加入 「Add dependencies with provided scope to classpath」|eclipse 作法待補|
+| 3 |IDE 試跑||
+| 4 |設定 Run Config 第二組: ||
+| 5 |打包 jar ||
+| 6 |Spark submit 試跑 ||
 
 ## 4. 常見問題與排障
 紀錄一下大家碰到的狀況
 
 ## 5. 其他知識加值區
-一些小細節跟架構面的知識分享
+一些細節知識跟架構面的觀念建立
 
 ## 6. 小結
+讀完大概是這樣
 
 ![cat](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/buffering-loading.gif)
 
