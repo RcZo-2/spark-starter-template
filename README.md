@@ -1,6 +1,6 @@
 # 在本機開發 Apache Spark 以及試跑 server submit job
 
-2025/2/5 更新初版
+2025/2/7 更新初版
 
 ## 1. 事先準備
 
@@ -55,7 +55,7 @@
 | 1 |準備好開發工具，放好程式跟 pom 檔|務必確認 Java 版本和 Spark 版本要和上面一樣|
 | 2 |設定 Run Config 第一組:<br>• **VM options** 設定 `-Dspark.master=local[*] -Dspark.driver.memory=1g -Dspark.executor.memory=1g -Dspark.log.level=WARN --add-exportsjava.base/sun.nio.ch=ALL-UNNAMED`<br>• **Environment variables** 加入 `HADOOP_HOME=..\上面 2-1 winutilS 路徑`<br>• **Modify options** 加入 「Add dependencies with provided scope to classpath」<br>![DEVconfig](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/DEVconfig.png)|其他常用 Config [官方連結](https://spark.apache.org/docs/latest/configuration.html)都有，這裡不多說明 <br>eclipse 作法待補|
 | 3 |IDE 試跑||
-| 4 |打包 jar，排除 Spark 已有 package 打包程式和其他依賴包為一支，詳見 pom 檔  ||
+| 4 |打包 jar，排除 Spark 已有 package 和其他依賴包一起包成一支，詳見 pom 檔  ||
 | 5 |設定 Run Config 第二組:<br>• **Script path** 設定 spark-submit.cmd ，路徑根據你2.安裝位置<br>• **Script options** 設定`--class <主程式> target\<你打包的jar檔>` 如下示意![SparkSubmitConf](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/Submitconfig.png)|windows 的話理論上會透過 powershell 跑，沒成功的話試試 **Interpreter path** 放 powershell 的執行檔位置|
 | 6 |到 spark-3.X.X-bin-hadoop3/conf 設定 spark-defaults.conf ，轉換 step 2 的 -Dspark 相關設定如下格式:<br>![SparkSubmitConf](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/SparkSubmitConf.png)||
 | 7 |Spark submit 試跑 ||
