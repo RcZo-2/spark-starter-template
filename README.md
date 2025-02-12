@@ -46,13 +46,13 @@
     ├── /sbin                                   # cluster server tool 相關啟動檔放這
     └── ...
 
-## 3. IDE 相關配置
+## 3. IDE 相關配置 (Java)
 
 直接使用本 repo 的範本
 
 | **Step** | **項目** | **Memo** |
 | --- | --- | --- |
-| 1 |準備好開發工具，放好程式跟 pom 檔|務必確認 Java 版本和 Spark 版本要和上面一樣|
+| 1 |準備好開發工具，選用本 repo 的 Java/... 放好程式跟 pom 檔|務必確認 Java 版本和 Spark 版本要和上面一樣|
 | 2 |設定 Run Config 第一組:<br>• **VM options** 設定 `-Dspark.master=local[*] -Dspark.driver.memory=1g -Dspark.executor.memory=1g -Dspark.log.level=WARN --add-exportsjava.base/sun.nio.ch=ALL-UNNAMED`<br>• **Environment variables** 加入 `HADOOP_HOME=..\上面 2-1 winutilS 路徑`<br>• **Modify options** 加入 「Add dependencies with provided scope to classpath」<br>![DEVconfig](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/DEVconfig.png)|其他常用 Config [官方連結](https://spark.apache.org/docs/latest/configuration.html)都有，這裡不多說明 <br>eclipse 作法待補|
 | 3 |IDE 試跑||
 | 4 |打包 jar，排除 Spark 已有 package 和其他依賴包一起包成一支，詳見 pom 檔  ||
@@ -60,13 +60,17 @@
 | 6 |到 spark-3.X.X-bin-hadoop3/conf 設定 spark-defaults.conf ，轉換 step 2 的 -Dspark 相關設定如下格式:<br>![SparkSubmitConf](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/SparkSubmitConf.png)||
 | 7 |Spark submit 試跑 ||
 
-## 4. 常見問題與排障
+## 4. IDE 相關配置 (Scala)
+
+
+
+## 5. 常見問題與排障
 紀錄一下大家碰到的狀況
 
-## 5. 其他知識加值區
+## 6. 其他知識加值區
 一些細節知識跟架構面的觀念建立
 
-## 6. 小結
+## 7. 小結
 讀完大概是這樣
 
 ![cat](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/buffering-loading.gif)

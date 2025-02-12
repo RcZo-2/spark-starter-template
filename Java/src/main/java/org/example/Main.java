@@ -27,6 +27,10 @@ public final class Main {
 
         logger.info("---------- Spark session started ----------");
 
+        Dataset<Row> taxiDF = spark.read().format("delta").table("samples.nyctaxi.trips");
+        Dataset<Row> sampleTaxiDF = taxiDF.limit(3);
+        sampleTaxiDF.show();
+
         Dataset<Row> df = spark
                 .read()
                 .format("mongodb")
