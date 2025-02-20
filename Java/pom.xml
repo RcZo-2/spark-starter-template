@@ -8,15 +8,14 @@
     <name>Archetype - test-spark-java</name>
     <url>https://github.com/RcZo-2/spark-starter-template</url>
     <properties>
-        <java.version>8</java.version>
-        <maven.compiler.target>8</maven.compiler.target>
-        <maven.compiler.source>8</maven.compiler.source>
+        <java.version>17</java.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
         <spark.version>3.5.0</spark.version>
         <scala.binary.version>2.12</scala.binary.version>
         <scala.version>${scala.binary.version}.18</scala.version>
         <amazon.sdk.version>2.26.12</amazon.sdk.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -31,10 +30,28 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>io.delta</groupId>
+            <artifactId>delta-spark_2.12</artifactId>
+            <version>3.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.hadoop</groupId>-->
+        <!--            <artifactId>hadoop-aws</artifactId>-->
+        <!--            <version>3.3.4</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.15.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.mongodb.spark</groupId>
             <artifactId>mongo-spark-connector_${scala.binary.version}</artifactId>
             <version>10.3.0</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>software.amazon.awssdk</groupId>

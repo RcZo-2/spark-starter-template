@@ -16,8 +16,8 @@ docker run  -p 9000:9000 -p 9090:9090 --name minio \
   minio/minio server /data  --console-address ":9000" --address ":9090"
 ```
 
-到 9000 port 會看到管理站台，輸入上面帳號密碼即可登入
-![minioLogin](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/minioLogin.png)
+到 9000 port 會看到管理站台，輸入上面設定的帳號密碼即可登入
+![minioLogin](https://raw.githubusercontent.com/RcZo-2/spark-starter-template/refs/heads/main/assets/images/minioLogin.png) 
 
 ## 2. 配置基本使用相關設定
 
